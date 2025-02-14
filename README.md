@@ -14,15 +14,15 @@ Task: Analyze the results of an A/B test, during which the target group was offe
 
 Input data: Four CSV files were provided for analysis:
 
-groups.csv — information about users belonging to the control (A) or experimental (B) group.
-groups_add.csv — an additional file with users, transferred two days after the start of the experiment.
-active_studs.csv — information about users who visited the platform on the days of the experiment.
-checks.csv — data on user payments on the days of the experiment.
+groups.csv - information about users belonging to the control (A) or experimental (B) group.
+groups_add.csv - an additional file with users, transferred two days after the start of the experiment.
+active_studs.csv - information about users who visited the platform on the days of the experiment.
+checks.csv - data on user payments on the days of the experiment.
 
 Metrics: The following were selected as the main metrics for the analysis:
 
-CR (Conversion Rate) — the percentage of users who made a payment. This metric shows the effectiveness of the new mechanics in attracting payments.
-ARPPU (Average Revenue Per Paying User) — the average revenue per paying user, which allows us to assess the economic feasibility of the new mechanics.
+CR (Conversion Rate) - the percentage of users who made a payment. This metric shows the effectiveness of the new mechanics in attracting payments.
+ARPPU (Average Revenue Per Paying User) - the average revenue per paying user, which allows us to assess the economic feasibility of the new mechanics.
 Differences in metrics: During the analysis, differences were found in the CR and ARPPU values ​​between the control and experimental groups. These differences may be due to changes in user behavior caused by the new payment mechanics.
 
 Statistical significance: To test the statistical significance of differences between the groups, the chi-square and t-tests were used. These tests showed that the observed differences are statistically significant, indicating the impact of the new payment mechanics on user behavior.
@@ -44,11 +44,11 @@ Problem: An educational platform conducted an experiment testing a new payment s
 
 Solution: To solve the problem, a complex SQL query was written that displays the following metrics in one result:
 
-ARPU — average revenue per user, taking into account all those who were included in the experiment.
-ARPAU — average revenue per active user who solved more than 10 problems correctly.
-CR into purchase — conversion rate into purchase among all users.
-CR of active user into purchase — conversion rate among active users.
-CR in mathematics — conversion rate among users actively engaged in mathematics.
+ARPU - average revenue per user, taking into account all those who were included in the experiment.
+ARPAU - average revenue per active user who solved more than 10 problems correctly.
+CR into purchase - conversion rate into purchase among all users.
+CR of active user into purchase - conversion rate among active users.
+CR in mathematics - conversion rate among users actively engaged in mathematics.
 The query effectively uses aggregation functions and filters, which allows you to get the necessary data in an optimal form, minimizing execution time and resource consumption.
 
 
